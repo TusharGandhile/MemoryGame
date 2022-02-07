@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 960px;
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    gap:1rem;
+    margin:auto;
+    padding:20px;
+}
+.cell{
+    position:relative;
+    cursor:pointer;
+}
+
+.cell div{
+    height:130px;
+    border-radius: 4px;
+}
+.front{
+    border:2px solid #c9c8c3;
+    background-color: #f2f2f2;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+   transform:rotateY(90deg);
+}
+.back{
+    background-color: #009122;
+}
+
+.flip{
+    transform: rotateY(0deg);
+}
+.match{
+    transform: rotateY(0deg);
+}
+.show{
+    transform: rotateY(0deg);
+}
